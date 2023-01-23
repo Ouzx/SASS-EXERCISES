@@ -1,0 +1,61 @@
+.exercise {
+  padding: 1rem;
+  text-align: center;
+  color: red;
+  border: 1px solid red;
+  font-size: 1rem;
+}
+.exercise .exercise-title {
+  color: green;
+  text-decoration: underline;
+  -webkit-text-decoration-color: blue;
+          text-decoration-color: blue;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+}
+.exercise .exercise-wrapper {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.exercise .exercise-content {
+  padding: 1rem;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  font-size: 1rem;
+}
+.exercise .article-1 {
+  padding: 1rem;
+  text-align: center;
+  color: blue;
+  border: 1px solid green;
+  font-size: 1rem;
+}
+.exercise .article-2 {
+  padding: 1rem;
+  text-align: center;
+  color: red;
+  border: 1px solid green;
+  font-size: 1rem;
+}
+.exercise .article-3 {
+  padding: 1rem;
+  text-align: center;
+  color: blue;
+  border: 1px solid green;
+  font-size: 1rem;
+}
+.exercise .article-4 {
+  padding: 1rem;
+  text-align: center;
+  color: red;
+  border: 1px solid green;
+  font-size: 1rem;
+}
+.exercise .exercise-footer {
+  padding: 1rem;
+  text-align: center;
+  color: green;
+  border: 1px solid blue;
+  font-size: 24px;
+}/*# sourceMappingURL=style.css.map */

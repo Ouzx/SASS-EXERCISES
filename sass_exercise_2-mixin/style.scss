@@ -1,0 +1,46 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-ternariy: green;
+
+@mixin box($color: black, $border-color: black, $font-size: 1rem) {
+  padding: 1rem;
+  text-align: center;
+  color: $color;
+  border: 1px solid $border-color;
+  font-size: $font-size;
+}
+
+.exercise {
+  @include box($color-primary, $color-primary, 1rem);
+
+  .exercise-title {
+    color: $color-ternariy;
+    text-decoration: underline;
+    text-decoration-color: $color-secondary;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 1px;
+  }
+
+  .exercise-wrapper {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .exercise-content {
+    @include box();
+  }
+  @for $i from 1 through 4 {
+    .article-#{$i} {
+      $mod: $i % 2;
+      $article-color: $color-primary;
+      @if $mod != 0 {
+        $article-color: $color-secondary;
+      }
+      @include box($article-color, $color-ternariy);
+    }
+  }
+
+  .exercise-footer {
+    @include box($color-ternariy, $color-secondary, 24px);
+  }
+}
