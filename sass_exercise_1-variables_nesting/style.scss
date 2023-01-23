@@ -1,0 +1,44 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+.exercise {
+    border: 1px solid $color-primary;
+    padding: 1rem;
+    .exercise-title {
+        color: $color-tertiary;
+        text-decoration: underline;
+        text-decoration-color: $color-secondary;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 6px;
+        text-align: center;
+    }
+
+    .exercise-wrapper{
+        display: flex;
+    }
+
+    .exercise-content{
+        border: 1px solid $color-tertiary;
+        padding: 1rem;
+        text-align: center;
+        font-size: medium;
+       
+    }
+
+        article {
+            &:nth-child(odd) {
+                .exercise-content {
+                    // styles for odd child p tags
+                color: $color-secondary
+                }
+            }
+    
+            &:nth-child(even) {
+                .exercise-content {
+                    // styles for even child p tags
+                color: $color-primary
+                }
+            }
+        }
+}
