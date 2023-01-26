@@ -1,0 +1,189 @@
+.number-wrapper > div:nth-child(1) {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+}
+
+.number-wrapper > div:nth-child(2) {
+  background-color: #e6e6e6;
+  color: #191919;
+}
+
+.number-wrapper > div:nth-child(3) {
+  background-color: #d9d9d9;
+  color: #262626;
+}
+
+.number-wrapper > div:nth-child(4) {
+  background-color: #cccccc;
+  color: #333333;
+}
+
+.number-wrapper > div:nth-child(5) {
+  background-color: #bfbfbf;
+  color: #404040;
+}
+
+.number-wrapper > div:nth-child(6) {
+  background-color: #b3b3b3;
+  color: #4c4c4c;
+}
+
+.number-wrapper > div:nth-child(7) {
+  background-color: #a6a6a6;
+  color: #595959;
+}
+
+.number-wrapper > div:nth-child(8) {
+  background-color: #999999;
+  color: #666666;
+}
+
+.number-wrapper > div:nth-child(9) {
+  background-color: #8c8c8c;
+  color: #737373;
+}
+
+.number-wrapper > div:nth-child(10) {
+  background-color: blue;
+  color: yellow;
+}
+
+.number-wrapper > div:nth-child(11) {
+  background-color: gray;
+  color: #7f7f7f;
+}
+
+.number-wrapper > div:nth-child(12) {
+  background-color: #737373;
+  color: #8c8c8c;
+}
+
+.number-wrapper > div:nth-child(13) {
+  background-color: #666666;
+  color: #999999;
+}
+
+.number-wrapper > div:nth-child(14) {
+  background-color: #595959;
+  color: #a6a6a6;
+}
+
+.number-wrapper > div:nth-child(15) {
+  background-color: #4d4d4d;
+  color: #b2b2b2;
+}
+
+.number-wrapper > div:nth-child(16) {
+  background-color: #404040;
+  color: #bfbfbf;
+}
+
+.number-wrapper > div:nth-child(17) {
+  background-color: #333333;
+  color: #cccccc;
+}
+
+.number-wrapper > div:nth-child(18) {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+
+.number-wrapper > div:nth-child(19) {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+}
+
+.exercise {
+  padding: 1rem;
+  text-align: center;
+  color: red;
+  border: 0.0625rem solid red;
+  font-size: 1rem;
+}
+.exercise .exercise-title, .exercise h2, .exercise h1 {
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-underline-offset: 0.375rem;
+  text-decoration-thickness: 0.0625rem;
+}
+.exercise h2 {
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  padding: 1rem;
+  border: 0.0625rem red solid;
+}
+.exercise .exercise-wrapper {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.exercise .exercise-content {
+  padding: 1rem;
+  text-align: center;
+  color: black;
+  border: 0.0625rem solid black;
+  font-size: 1rem;
+}
+.exercise .article-1 {
+  padding: 1rem;
+  text-align: center;
+  color: blue;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+.exercise .article-2 {
+  padding: 1rem;
+  text-align: center;
+  color: red;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+.exercise .article-3 {
+  padding: 1rem;
+  text-align: center;
+  color: blue;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+.exercise .article-4 {
+  padding: 1rem;
+  text-align: center;
+  color: red;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+.exercise .number-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exercise .number-wrapper div:nth-child(10) {
+  color: red;
+}
+.exercise .number-box, .exercise .number-wrapper div {
+  border: 0.0625rem red solid;
+  height: 2.8125rem;
+  width: 2.8125rem;
+  text-align: start;
+  font-weight: 400;
+}
+.exercise .fs-1rem {
+  font-size: 1rem;
+}
+.exercise .fs-2rem {
+  font-size: 2rem;
+}
+.exercise .fs-3rem {
+  font-size: 3rem;
+}
+.exercise .exercise-footer {
+  padding: 1rem;
+  text-align: center;
+  color: green;
+  border: 0.0625rem solid blue;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,126 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-ternariy: green;
+@use "./functions.scss" as f;
+@use "sass:color";
+
+$numbers: (
+  "1": color.adjust(black, $lightness: 95%),
+  "2": color.adjust(black, $lightness: 90%),
+  "3": color.adjust(black, $lightness: 85%),
+  "4": color.adjust(black, $lightness: 80%),
+  "5": color.adjust(black, $lightness: 75%),
+  "6": color.adjust(black, $lightness: 70%),
+  "7": color.adjust(black, $lightness: 65%),
+  "8": color.adjust(black, $lightness: 60%),
+  "9": color.adjust(black, $lightness: 55%),
+  "10": blue,
+  "11": color.adjust(black, $lightness: 50%),
+  "12": color.adjust(black, $lightness: 45%),
+  "13": color.adjust(black, $lightness: 40%),
+  "14": color.adjust(black, $lightness: 35%),
+  "15": color.adjust(black, $lightness: 30%),
+  "16": color.adjust(black, $lightness: 25%),
+  "17": color.adjust(black, $lightness: 20%),
+  "18": color.adjust(black, $lightness: 15%),
+  "19": color.adjust(black, $lightness: 10%),
+);
+
+@each $key, $value in $numbers {
+  .number-wrapper > div:nth-child(#{$key}) {
+    background-color: $value;
+    color: color.invert($value);
+  }
+}
+
+@mixin box($color: black, $border-color: black, $font-size: 1rem) {
+  padding: 1rem;
+  text-align: center;
+  color: $color;
+  border: f.rem(1) solid $border-color;
+  font-size: $font-size;
+}
+
+.exercise {
+  @include box($color-primary, $color-primary, 1rem);
+
+  .exercise-title {
+    color: $color-ternariy;
+    text-decoration: underline;
+    text-decoration-color: $color-secondary;
+    text-underline-offset: f.rem(6);
+    text-decoration-thickness: f.rem(1);
+  }
+
+  h1 {
+    @extend .exercise-title;
+  }
+
+  h2 {
+    @extend .exercise-title;
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    // border-color: black;
+    padding: 1rem;
+    border: f.rem(1) $color-primary solid;
+  }
+
+  .exercise-wrapper {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .exercise-content {
+    @include box();
+  }
+  @for $i from 1 through 4 {
+    .article-#{$i} {
+      $mod: $i % 2;
+      $article-color: $color-primary;
+      @if $mod != 0 {
+        $article-color: $color-secondary;
+      }
+      @include box($article-color, $color-ternariy);
+    }
+  }
+
+  .number-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      @extend .number-box;
+    }
+
+    div:nth-child(10) {
+      color: red;
+    }
+  }
+
+  .number-box {
+    border: f.rem(1) red solid;
+    height: f.rem(45);
+    width: f.rem(45);
+    text-align: start;
+    font-weight: 400;
+  }
+
+  .fs-1rem {
+    font-size: 1rem;
+  }
+
+  .fs-2rem {
+    font-size: 2rem;
+  }
+
+  .fs-3rem {
+    font-size: 3rem;
+  }
+
+  .exercise-footer {
+    @include box($color-ternariy, $color-secondary, f.rem(24));
+  }
+}
